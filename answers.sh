@@ -34,3 +34,13 @@ C. Joins
 16. SELECT companies.Name FROM companies
     LEFT JOIN employees ON companies.name = employees.Company
     WHERE employees.Role = 'Graphic Designer'
+
+D. Count & Filter 
+
+18. SELECT name FROM students  
+    ORDER by Points DESC 
+    LIMIT 1 ;
+19. SELECT avg(Points) FROM students ;
+20. SELECT count(*) FROM students WHERE Points = 500 ;
+21. SELECT name FROM students WHERE name like '%s%' ;
+22. SELECT * FROM students ORDER by Points DESC ;
